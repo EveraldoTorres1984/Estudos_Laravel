@@ -48,14 +48,18 @@ class SiteController extends Controller
 
         return view('exercicio', $dados);
     }
-
-    public function index2(){
-
-
+    public function index2()
+    {
         return view('include');
     }
 
-    public function components(){
+    public function components()
+    {
         return view('comp');
+    }
+
+    public function layout()
+    {
+        return view('site');
     }
 }
