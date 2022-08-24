@@ -5,13 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Laravel</title>
 </head>
 
 <body>
-    <h1>Seja bem vindo, {{ $apelido_nome }}</h1>
-    <h2>2 + 3 é: {{ 2 + 3 }}</h2>
-    <h3>{{-- funcao() --}}</h3>
+    <div style="
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    margin-top: 5em
+   ">
+        @foreach ($pessoas as $p)
+            {{-- @component('components.avatar')
+                @slot('image')
+                    {{ $p['image'] }}
+                @endslot
+                @slot('nome')
+                    {{ $p['nome'] }}
+                @endslot
+                @slot('idade')
+                    {{ $p['idade'] }}
+                @endslot
+                @slot('birth')
+                    {{ $p['birth'] }}
+                @endslot
+            @endcomponent
+        @endforeach
+ --}}
+
+    @include('components/avatar', $p)
+    @endforeach
+    </div>
+
 </body>
 
 </html>
