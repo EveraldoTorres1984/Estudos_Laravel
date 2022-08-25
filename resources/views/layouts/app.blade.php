@@ -9,14 +9,15 @@
 </head>
 
 <body style="margin: 0; padding: 0;">
-    @section('header')
-        
-    
-    <main style="padding: 20px; height: 60vh">
+    <x-nav>
+    </x-nav>
+
+    <main style="padding: 20px; height: 76vh">
         @yield('content')
     </main>
 
-    @section('footer')        
-    
+    <x-footer>
+    </x-footer>
 </body>
+
 </html>

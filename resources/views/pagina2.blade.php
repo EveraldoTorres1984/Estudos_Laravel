@@ -2,5 +2,6 @@
 
 
 @section('content')
-    <h1>Este é o conteúdo principal</h1>
+    <h1>Este é o conteúdo da página 2</h1>
 @endsection
+
